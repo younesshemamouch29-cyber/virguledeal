@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VirguleDeal - Les Meilleures Offres</title>
-    <meta name="description" content="Decouvrez les meilleures offres et deals du moment. Electronique, beaute, mode, maison - livraison rapide au Maroc.">
+    <meta name="description" content="Decouvrez les meilleures offres et deals du moment. Electronique, beaute, mode, maison - livraison rapide.">
     <meta property="og:title" content="VirguleDeal - Les Meilleures Offres">
-    <meta property="og:description" content="Les meilleurs produits aux meilleurs prix. Livraison au Maroc.">
+    <meta property="og:description" content="Les meilleurs produits aux meilleurs prix.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://virguledeal.com">
     <style>
@@ -35,7 +35,7 @@
         .old-price { font-size: 14px; color: #999; text-decoration: line-through; }
         .stars { color: #ffc107; font-size: 13px; margin-bottom: 10px; }
         .sold { font-size: 11px; color: #999; margin-left: 6px; }
-        .buy-btn { display: block; width: 100%; background: #ff6600; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 14px; border: none; cursor: pointer; transition: background 0.2s; }
+        .buy-btn { display: block; width: 100%; background: #ff6600; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 14px; transition: background 0.2s; }
         .buy-btn:hover { background: #e55c00; }
         .free-ship { display: inline-block; background: #e8f5e9; color: #2e7d32; font-size: 11px; padding: 3px 8px; border-radius: 4px; margin-bottom: 10px; }
         .features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 40px 0; }
@@ -45,168 +45,212 @@
         .feature p { font-size: 12px; color: #666; }
         .footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 30px; font-size: 13px; }
         .footer a { color: #ff8533; text-decoration: none; }
-        @media (max-width: 768px) {
-            .products { grid-template-columns: 1fr; }
-            .features { grid-template-columns: repeat(2, 1fr); }
-        }
+        @media (max-width: 768px) { .products { grid-template-columns: 1fr; } .features { grid-template-columns: repeat(2, 1fr); } }
     </style>
-    <!-- Facebook Pixel -->
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1287037926691639');
-    fbq('track', 'PageView');
+    fbq('init', '1287037926691639');fbq('track', 'PageView');
     </script>
 </head>
 <body>
-    <div class="header">
-        <h1>VirguleDeal</h1>
-        <p>Les meilleures offres, au meilleur prix</p>
-    </div>
+    <div class="header"><h1>VirguleDeal</h1><p>Les meilleures offres, au meilleur prix</p></div>
     <div class="container">
         <div class="hero">
             <h2>Les meilleurs deals du moment</h2>
             <p>Selection de produits tendance avec livraison rapide. Profitez des offres avant qu'elles n'expirent !</p>
         </div>
         <div class="badge-bar">
-            <span>🔒 Paiement securise</span>
-            <span>🚚 Livraison rapide</span>
-            <span>⭐ Produits verifies</span>
-            <span>💰 Meilleurs prix</span>
+            <span>&#128274; Paiement securise</span>
+            <span>&#128666; Livraison rapide</span>
+            <span>&#11088; Produits verifies</span>
+            <span>&#128176; Meilleurs prix</span>
         </div>
         <div class="products">
-            <!-- Product 1: Ecouteurs Bluetooth -->
-            <div class="product-card">
-                <div class="discount-badge">-45%</div>
-                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20wireless%20bluetooth%20earbuds%20TWS%20white%20case%20modern%20minimalist%20clean%20background?width=600&height=440&nologo=true" alt="Ecouteurs Bluetooth TWS Pro">
-                <div class="product-info">
-                    <div class="product-category">Electronique</div>
-                    <div class="product-name">Ecouteurs Bluetooth TWS Pro</div>
-                    <div class="product-desc">Bluetooth 5.3, reduction de bruit, 30h autonomie, etanche IPX5</div>
-                    <div class="stars">⭐⭐⭐⭐⭐ <span class="sold">1.2k+ vendus</span></div>
-                    <span class="free-ship">🚚 Livraison gratuite</span>
-                    <div class="price-row">
-                        <span class="price">199 MAD</span>
-                        <span class="old-price">359 MAD</span>
-                    </div>
-                    <a href="https://www.amazon.com/s?k=bluetooth+earbuds+tws+pro&tag=youness0e-21" class="buy-btn" onclick="fbq('track','AddToCart',{content_name:'Ecouteurs Bluetooth',value:199,currency:'MAD'})">Acheter maintenant</a>
-                </div>
-            </div>
-            <!-- Product 2: Serum Vitamine C -->
-            <div class="product-card">
-                <div class="discount-badge">-50%</div>
-                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20vitamin%20C%20serum%20skincare%20bottle%20golden%20liquid%20clean%20white%20background%20luxury?width=600&height=440&nologo=true" alt="Serum Vitamine C Anti-Age">
-                <div class="product-info">
-                    <div class="product-category">Beaute</div>
-                    <div class="product-name">Serum Vitamine C Anti-Age</div>
-                    <div class="product-desc">Vitamine C + Acide Hyaluronique, anti-rides, eclat naturel, 30ml</div>
-                    <div class="stars">⭐⭐⭐⭐⭐ <span class="sold">2.5k+ vendus</span></div>
-                    <span class="free-ship">🚚 Livraison gratuite</span>
-                    <div class="price-row">
-                        <span class="price">149 MAD</span>
-                        <span class="old-price">299 MAD</span>
-                    </div>
-                    <a href="https://www.amazon.com/s?k=vitamin+c+serum+hyaluronic+acid&tag=youness0e-21" class="buy-btn" onclick="fbq('track','AddToCart',{content_name:'Serum Vitamine C',value:149,currency:'MAD'})">Acheter maintenant</a>
-                </div>
-            </div>
-            <!-- Product 3: Montre Connectee -->
+
             <div class="product-card">
                 <div class="discount-badge">-40%</div>
-                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20smartwatch%20sport%20AMOLED%20display%20black%20modern%20fitness%20tracker%20clean%20background?width=600&height=440&nologo=true" alt="Montre Connectee Sport 2024">
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20Ensemble%20Sport%20Femme%20Yoga%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="Ensemble Sport Femme Yoga" loading="lazy">
                 <div class="product-info">
-                    <div class="product-category">Electronique</div>
-                    <div class="product-name">Montre Connectee Sport 2024</div>
-                    <div class="product-desc">GPS, cardio, SpO2, 100+ modes sport, ecran AMOLED, 14 jours autonomie</div>
-                    <div class="stars">⭐⭐⭐⭐⭐ <span class="sold">890+ vendus</span></div>
-                    <span class="free-ship">🚚 Livraison gratuite</span>
+                    <div class="product-category">T-shirts</div>
+                    <div class="product-name">Ensemble Sport Femme Yoga</div>
+                    <div class="product-desc">Ensemble legging + brassiere sport, tissu respirant, haute elasticite, parfait pour yoga et fitness. ASIN: B0GXYZ1234</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">700+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
                     <div class="price-row">
-                        <span class="price">349 MAD</span>
-                        <span class="old-price">579 MAD</span>
+                        <span class="price">199 MAD</span>
+                        <span class="old-price">331 MAD</span>
                     </div>
-                    <a href="https://www.amazon.com/s?k=smartwatch+sport+amoled+gps&tag=youness0e-21" class="buy-btn" onclick="fbq('track','AddToCart',{content_name:'Montre Connectee',value:349,currency:'MAD'})">Acheter maintenant</a>
+                    <a href="https://www.amazon.com/s?k=Ensemble%2BSport%2BFemme%2BYoga&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
                 </div>
             </div>
-            <!-- Product 4: Sac a Dos Antivol -->
+
             <div class="product-card">
-                <div class="discount-badge">-35%</div>
-                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20anti-theft%20urban%20backpack%20black%20USB%20port%20laptop%20compartment%20modern%20clean%20background?width=600&height=440&nologo=true" alt="Sac a Dos Antivol Urbain">
-                <div class="product-info">
-                    <div class="product-category">Accessoires</div>
-                    <div class="product-name">Sac a Dos Antivol Urbain</div>
-                    <div class="product-desc">Port USB, compartiment laptop 15.6", antivol, impermeable</div>
-                    <div class="stars">⭐⭐⭐⭐⭐ <span class="sold">650+ vendus</span></div>
-                    <span class="free-ship">🚚 Livraison gratuite</span>
-                    <div class="price-row">
-                        <span class="price">279 MAD</span>
-                        <span class="old-price">429 MAD</span>
-                    </div>
-                    <a href="https://www.amazon.com/s?k=anti+theft+backpack+usb+laptop&tag=youness0e-21" class="buy-btn" onclick="fbq('track','AddToCart',{content_name:'Sac Antivol',value:279,currency:'MAD'})">Acheter maintenant</a>
-                </div>
-            </div>
-            <!-- Product 5: Lampe LED Bureau -->
-            <div class="product-card">
-                <div class="discount-badge">-42%</div>
-                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20modern%20LED%20desk%20lamp%20wireless%20charger%20foldable%20touch%20control%20clean%20white%20background?width=600&height=440&nologo=true" alt="Lampe LED Bureau Tactile">
+                <div class="discount-badge">-43%</div>
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20Lampe%20LED%20Bureau%20Tactile%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="Lampe LED Bureau Tactile" loading="lazy">
                 <div class="product-info">
                     <div class="product-category">Maison</div>
                     <div class="product-name">Lampe LED Bureau Tactile</div>
-                    <div class="product-desc">Chargeur sans fil Qi, 5 niveaux luminosite, port USB, pliable</div>
-                    <div class="stars">⭐⭐⭐⭐⭐ <span class="sold">430+ vendus</span></div>
-                    <span class="free-ship">🚚 Livraison gratuite</span>
+                    <div class="product-desc">Lampe de bureau LED avec chargeur sans fil Qi, 5 niveaux luminosite, port USB, pliable. Design moderne. ASIN: B0FXYZ5678</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">450+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
                     <div class="price-row">
                         <span class="price">229 MAD</span>
-                        <span class="old-price">399 MAD</span>
+                        <span class="old-price">401 MAD</span>
                     </div>
-                    <a href="https://www.amazon.com/s?k=led+desk+lamp+wireless+charger&tag=youness0e-21" class="buy-btn" onclick="fbq('track','AddToCart',{content_name:'Lampe LED',value:229,currency:'MAD'})">Acheter maintenant</a>
+                    <a href="https://www.amazon.com/s?k=Lampe%2BLED%2BBureau%2BTactile&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
                 </div>
             </div>
-            <!-- Product 6: Ensemble Sport Yoga -->
+
             <div class="product-card">
-                <div class="discount-badge">-48%</div>
-                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20womens%20yoga%20sport%20set%20leggings%20sports%20bra%20fitness%20outfit%20clean%20background%20fashion?width=600&height=440&nologo=true" alt="Ensemble Sport Femme Yoga">
+                <div class="discount-badge">-46%</div>
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20Sac%20a%20Dos%20Antivol%20Urbain%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="Sac a Dos Antivol Urbain" loading="lazy">
                 <div class="product-info">
-                    <div class="product-category">Sport & Mode</div>
-                    <div class="product-name">Ensemble Sport Femme Yoga</div>
-                    <div class="product-desc">Legging + brassiere sport, tissu respirant, haute elasticite</div>
-                    <div class="stars">⭐⭐⭐⭐⭐ <span class="sold">1.8k+ vendus</span></div>
-                    <span class="free-ship">🚚 Livraison gratuite</span>
+                    <div class="product-category">Maison</div>
+                    <div class="product-name">Sac a Dos Antivol Urbain</div>
+                    <div class="product-desc">Sac a dos avec port USB, compartiment laptop 15.6 pouces, antivol, imperméable. Ideal pour travail et voyage. ASIN: B0AX</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">600+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
+                    <div class="price-row">
+                        <span class="price">279 MAD</span>
+                        <span class="old-price">516 MAD</span>
+                    </div>
+                    <a href="https://www.amazon.com/s?k=Sac%2Ba%2BDos%2BAntivol%2BUrbain&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="discount-badge">-49%</div>
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20Montre%20Connectee%20Sport%202024%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="Montre Connectee Sport 2024" loading="lazy">
+                <div class="product-info">
+                    <div class="product-category">Electronique</div>
+                    <div class="product-name">Montre Connectee Sport 2024</div>
+                    <div class="product-desc">Smartwatch avec GPS, cardio, SpO2, 100+ modes sport, ecran AMOLED 1.43 pouces, 14 jours autonomie. ASIN: B0DXYZ3456</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">500+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
+                    <div class="price-row">
+                        <span class="price">349 MAD</span>
+                        <span class="old-price">684 MAD</span>
+                    </div>
+                    <a href="https://www.amazon.com/s?k=Montre%2BConnectee%2BSport%2B2024&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="discount-badge">-52%</div>
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20Serum%20Vitamine%20C%20Anti-Age%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="Serum Vitamine C Anti-Age" loading="lazy">
+                <div class="product-info">
+                    <div class="product-category">Beaute</div>
+                    <div class="product-name">Serum Vitamine C Anti-Age</div>
+                    <div class="product-desc">Serum visage Vitamine C + Acide Hyaluronique, anti-rides, eclat naturel, 30ml. Best-seller Amazon beaute. ASIN: B0BXYZ78</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">800+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
+                    <div class="price-row">
+                        <span class="price">149 MAD</span>
+                        <span class="old-price">310 MAD</span>
+                    </div>
+                    <a href="https://www.amazon.com/s?k=Serum%2BVitamine%2BC%2BAnti-Age&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="discount-badge">-40%</div>
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20Ecouteurs%20Bluetooth%20TWS%20Pro%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="Ecouteurs Bluetooth TWS Pro" loading="lazy">
+                <div class="product-info">
+                    <div class="product-category">Electronique</div>
+                    <div class="product-name">Ecouteurs Bluetooth TWS Pro</div>
+                    <div class="product-desc">Ecouteurs sans fil Bluetooth 5.3 avec reduction de bruit, autonomie 30h, etanche IPX5. Parfait pour le sport et le quoti</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">1000+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
                     <div class="price-row">
                         <span class="price">199 MAD</span>
-                        <span class="old-price">379 MAD</span>
+                        <span class="old-price">331 MAD</span>
                     </div>
-                    <a href="https://www.amazon.com/s?k=women+yoga+set+leggings+sport+bra&tag=youness0e-21" class="buy-btn" onclick="fbq('track','AddToCart',{content_name:'Ensemble Yoga',value:199,currency:'MAD'})">Acheter maintenant</a>
+                    <a href="https://www.amazon.com/s?k=Ecouteurs%2BBluetooth%2BTWS%2BPro&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="discount-badge">-43%</div>
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20Jupe%20Plissee%20Modern%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="Jupe Plissee Modern" loading="lazy">
+                <div class="product-info">
+                    <div class="product-category">Robes</div>
+                    <div class="product-name">Jupe Plissee Modern</div>
+                    <div class="product-desc">Jupe plissee mi-longue, style moderne et chic</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">200+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
+                    <div class="price-row">
+                        <span class="price">249 MAD</span>
+                        <span class="old-price">436 MAD</span>
+                    </div>
+                    <a href="https://www.amazon.com/s?k=Jupe%2BPlissee%2BModern&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="discount-badge">-46%</div>
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20Sneakers%20Urban%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="Sneakers Urban" loading="lazy">
+                <div class="product-info">
+                    <div class="product-category">Chaussures</div>
+                    <div class="product-name">Sneakers Urban</div>
+                    <div class="product-desc">Baskets tendance confortables pour un look urbain</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">250+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
+                    <div class="price-row">
+                        <span class="price">449 MAD</span>
+                        <span class="old-price">831 MAD</span>
+                    </div>
+                    <a href="https://www.amazon.com/s?k=Sneakers%2BUrban&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="discount-badge">-49%</div>
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20Robe%20Ete%20Florale%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="Robe Ete Florale" loading="lazy">
+                <div class="product-info">
+                    <div class="product-category">Robes</div>
+                    <div class="product-name">Robe Ete Florale</div>
+                    <div class="product-desc">Robe legere a motifs floraux, ideale pour l ete marocain</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">300+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
+                    <div class="price-row">
+                        <span class="price">299 MAD</span>
+                        <span class="old-price">586 MAD</span>
+                    </div>
+                    <a href="https://www.amazon.com/s?k=Robe%2BEte%2BFlorale&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="discount-badge">-52%</div>
+                <img class="product-img" src="https://image.pollinations.ai/prompt/Professional%20product%20photo%20T-shirt%20Premium%20Coton%20clean%20white%20background%20e-commerce?width=600&height=440&nologo=true" alt="T-shirt Premium Coton" loading="lazy">
+                <div class="product-info">
+                    <div class="product-category">T-shirts</div>
+                    <div class="product-name">T-shirt Premium Coton</div>
+                    <div class="product-desc">T-shirt en coton bio, coupe reguliere, parfait pour le quotidien</div>
+                    <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088; <span class="sold">500+ vendus</span></div>
+                    <span class="free-ship">&#128666; Livraison gratuite</span>
+                    <div class="price-row">
+                        <span class="price">149 MAD</span>
+                        <span class="old-price">310 MAD</span>
+                    </div>
+                    <a href="https://www.amazon.com/s?k=T-shirt%2BPremium%2BCoton&tag=youness0e-21" class="buy-btn" target="_blank" rel="noopener">Acheter maintenant</a>
                 </div>
             </div>
         </div>
         <div class="features">
-            <div class="feature">
-                <div class="icon">🔥</div>
-                <h3>Offres Flash</h3>
-                <p>Promotions selectionnees chaque jour</p>
-            </div>
-            <div class="feature">
-                <div class="icon">🚚</div>
-                <h3>Livraison Rapide</h3>
-                <p>Livraison Amazon fiable</p>
-            </div>
-            <div class="feature">
-                <div class="icon">💰</div>
-                <h3>Meilleur Prix</h3>
-                <p>Prix compares et verifies</p>
-            </div>
-            <div class="feature">
-                <div class="icon">🛡️</div>
-                <h3>Garantie</h3>
-                <p>Produits garantis Amazon</p>
-            </div>
+            <div class="feature"><div class="icon">&#128293;</div><h3>Offres Flash</h3><p>Promotions selectionnees</p></div>
+            <div class="feature"><div class="icon">&#128666;</div><h3>Livraison Rapide</h3><p>Amazon fiable</p></div>
+            <div class="feature"><div class="icon">&#128176;</div><h3>Meilleur Prix</h3><p>Prix compares</p></div>
+            <div class="feature"><div class="icon">&#128737;</div><h3>Garantie</h3><p>Produits garantis</p></div>
         </div>
     </div>
     <div class="footer">
         <p>&copy; 2026 VirguleDeal. Tous droits reserves. | <a href="/privacy.html">Politique de confidentialite</a></p>
-        <p style="margin-top:8px; font-size:11px;">VirguleDeal participe au Programme Partenaires d'Amazon, un programme d'affiliation permettant de percevoir des remunerations.</p>
+        <p style="margin-top:8px; font-size:11px;">VirguleDeal participe au Programme Partenaires d'Amazon.</p>
     </div>
 </body>
 </html>
